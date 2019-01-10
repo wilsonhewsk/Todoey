@@ -40,10 +40,15 @@ class TodoListViewController: SwipeTableViewController
         updateNavBar(withHexCode: colourHex)
     }
     
-    override func viewWillDisappear(_ animated: Bool)
+    override func willMove(toParent parent: UIViewController?)
     {
         updateNavBar(withHexCode: "1D9BF6")
     }
+    
+//    override func viewWillDisappear(_ animated: Bool)
+//    {
+//        updateNavBar(withHexCode: "1D9BF6")
+//    }
     
     //MARK - Nav Bar Setup Methods
     func updateNavBar(withHexCode colourHexCode : String)
